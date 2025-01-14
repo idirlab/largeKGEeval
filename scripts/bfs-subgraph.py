@@ -57,26 +57,30 @@ def write_subgraph(subgraph_triples, output_file):
         for subj, pred, obj in subgraph_triples:
             file.write(f"{subj},{pred},{obj}\n")
 
-# Parameters
-filename = 'data.txt'  # path to the RDF n-triple file
-output_file = 'subgraph_output.txt'
-start_node = '197114'  # Starting node for BFS (the very first node in the file)
-fraction = 0.1  # Fraction of total triples desired in subgraph
-print(f"Start node: {start_node}, subgraph size: {fraction*100}% of triples.")
+def main():
+    # Parameters
+    filename = 'data.txt'  # path to the RDF n-triple file
+    output_file = 'subgraph_output.txt'
+    start_node = '197114'  # Starting node for BFS (the very first node in the file)
+    fraction = 0.1  # Fraction of total triples desired in subgraph
+    print(f"Start node: {start_node}, subgraph size: {fraction*100}% of triples.")
 
-# Step 1: Load the graph from the file
-graph = load_graph(filename)
-print("Graph loaded successfully!")
+    # Load the graph from the file
+    graph = load_graph(filename)
+    print("Graph loaded successfully!")
 
-# Step 2: Calculate target triple count (10% of the total triples)
-total_triples = sum(len(neighbors) for neighbors in graph.values())
-target_triple_count = int(total_triples * fraction)
-print(f"{fraction*100}% of triples is {target_triple_count}.")
+    # Calculate target triple count (10% of the total triples)
+    total_triples = sum(len(neighbors) for neighbors in graph.values())
+    target_triple_count = int(total_triples * fraction)
+    print(f"{fraction*100}% of triples is {target_triple_count}.")
 
-# Step 3: Perform BFS to get the subgraph
-subgraph_triples = bfs_subgraph(graph, start_node, target_triple_count)
-print("Subgraph extracted successfully!")
+    # Perform BFS to get the subgraph
+    subgraph_triples = bfs_subgraph(graph, start_node, target_triple_count)
+    print("Subgraph extracted successfully!")
 
-# Step 4: Write the subgraph to an output file
-write_subgraph(subgraph_triples, output_file)
-print(f"Subgraph with approximately {fraction*100}% of triples saved to {output_file}")
+    # Write the subgraph to an output file
+    write_subgraph(subgraph_triples, output_file)
+    print(f"Subgraph with approximately {fraction*100}% of triples saved to {output_file}")
+
+if __name__ == "__main__":
+    main()

@@ -1,6 +1,8 @@
-# On Large-scale Evaluation of Embedding Models for Knowledge Graph Completion
+# On Large-Scale Evaluation of Embedding Models for Knowledge Graph Completion
 
-## Dataset
+## Overview
+
+## Datasets used 
 
 For our experiments, we leveraged two large-scale datasets, FB+CVT-REV and FB-CVT-REV, created from Freebase data dump. **The dataset can be downloaded from this [link](https://zenodo.org/records/7909511).**
 
@@ -36,6 +38,8 @@ For our experiments, we leveraged two large-scale datasets, FB+CVT-REV and FB-CV
   </tr>
 </tbody>
 </table>
+
+## Experiments 
 
 ## Related Work
 Please feel free to check out other papers of ours related to this topic: 

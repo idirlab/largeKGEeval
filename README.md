@@ -49,6 +49,8 @@ We perform our experiments on two large-scale datasets, FB-CVT-REV and FB+CVT-RE
 
 To perform the experiments in this paper, we utilized the provided training, validation, and test sets of the FB-CVT-REV and FB+CVT-REV datasets, with the split ratio of 90/5/5. Our experiments were conducted on an NVIDIA H100 80GB GPU. We also extend our gratitude to the Texas Advanced Computing Center ([TACC](https://tacc.utexas.edu)) for providing computing resources used in this work’s experimentation. We trained all the models, TransE ([Bordes et al.,2013](https://proceedings.neurips.cc/paper/2013/file/1cecc7a77928ca8133fa24680a88d2f9-Paper.pdf)), DistMult([Yang et al.,2015](https://arxiv.org/pdf/1412.6575)), ComplEx([Trouillon et al.,2016](http://proceedings.mlr.press/v48/trouillon16.pdf)), and RotatE([Sun et al.,2019](https://arxiv.org/pdf/1902.10197)), using the DGL-KE framework ([Zheng et al.,2020](https://arxiv.org/pdf/2004.08532.pdf)). Our scripts and the version of DGL-KE used for this work are available in this repository. 
 
+All the experimental results are available in the following manuscript: [link](https://arxiv.org/pdf/2504.08970)
+
 ## Related Work
 Please feel free to check out other papers of ours related to this topic: 
 - [Comprehensive analysis of freebase and dataset creation for robust evaluation of knowledge graph link prediction models](https://drive.google.com/file/d/1evfTheEJ4jVsjvXB-BRj9FE13UmtiQap/view)

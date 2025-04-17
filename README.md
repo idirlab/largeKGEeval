@@ -60,3 +60,14 @@ Please feel free to check out other papers of ours related to this topic:
 ## License
 
 The dataset and code are made available under the [CC0 1.0 Universal](https://github.com/idirlab/largeKGEeval/blob/main/LICENSE).
+
+## Cite
+If you find our work useful for your research or you use our datasets in a scientific publication, we kindly request that you cite the following paper:
+```bibtex
+@article{largekgeeval25,
+  title={On Large-scale Evaluation of Embedding Models for Knowledge Graph Completion},
+  author={Shirvani-Mahdavi, Nasim and Akrami, Farahnaz and Li, Chengkai},
+  journal={arXiv preprint arXiv:2504.08970},
+  year={2025}
+}
+```

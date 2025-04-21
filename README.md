@@ -10,7 +10,7 @@ This work makes the following contributions
   
 ## Datasets 
 
-We perform our experiments on two large-scale datasets, FB-CVT-REV and FB+CVT-REV. While FB+CVT-REV represents n-ary relationships using CVT nodes, FB-CVT-REV converts n-ary relationships into binary ones, similar to FB15k-237. This distinction allows us to assess how knowledge graph embedding model performance varies when data is modeled differently. These datasets, derived from Freebase, are large-scale, represent real-world scenarios, and do not include the data redundancy that exists in FB15k. **The dataset can be downloaded from this [link](https://zenodo.org/records/7909511).**
+We perform our experiments on two large-scale datasets, FB-CVT-REV and FB+CVT-REV. While FB+CVT-REV represents n-ary relationships using CVT nodes, FB-CVT-REV converts n-ary relationships into binary ones, similar to FB15k-237. This distinction allows us to assess how the knowledge graph embedding model's performance varies when the data is modeled differently. These datasets, derived from Freebase, are large-scale, represent real-world scenarios, and do not include the data redundancy that exists in FB15k. **The dataset can be downloaded from this [link](https://zenodo.org/records/7909511).**
 
 ### Dataset Statistics
 
@@ -47,7 +47,7 @@ We perform our experiments on two large-scale datasets, FB-CVT-REV and FB+CVT-RE
 
 ## Experiments & Results
 
-To perform the experiments in this paper, we utilized the provided training, validation, and test sets of the FB-CVT-REV and FB+CVT-REV datasets, with the split ratio of 90/5/5. Our experiments were conducted on an NVIDIA H100 80GB GPU. We also extend our gratitude to the Texas Advanced Computing Center ([TACC](https://tacc.utexas.edu)) for providing computing resources used in this work’s experimentation. We trained all the models, TransE ([Bordes et al.,2013](https://proceedings.neurips.cc/paper/2013/file/1cecc7a77928ca8133fa24680a88d2f9-Paper.pdf)), DistMult([Yang et al.,2015](https://arxiv.org/pdf/1412.6575)), ComplEx([Trouillon et al.,2016](http://proceedings.mlr.press/v48/trouillon16.pdf)), and RotatE([Sun et al.,2019](https://arxiv.org/pdf/1902.10197)), using the DGL-KE framework ([Zheng et al.,2020](https://arxiv.org/pdf/2004.08532.pdf)). Our scripts and the version of DGL-KE used for this work are available in this repository. 
+To perform the experiments in this paper, we utilized the provided training, validation, and test sets of the FB-CVT-REV and FB+CVT-REV datasets, with a split ratio of 90/5/5. Our experiments were conducted on an NVIDIA H100 80GB GPU. We also extend our gratitude to the Texas Advanced Computing Center ([TACC](https://tacc.utexas.edu)) for providing computing resources used in this work’s experimentation. We trained all the models, TransE ([Bordes et al.,2013](https://proceedings.neurips.cc/paper/2013/file/1cecc7a77928ca8133fa24680a88d2f9-Paper.pdf)), DistMult([Yang et al.,2015](https://arxiv.org/pdf/1412.6575)), ComplEx([Trouillon et al.,2016](http://proceedings.mlr.press/v48/trouillon16.pdf)), and RotatE([Sun et al.,2019](https://arxiv.org/pdf/1902.10197)), using the DGL-KE framework ([Zheng et al.,2020](https://arxiv.org/pdf/2004.08532.pdf)). Our scripts and the version of DGL-KE used for this work are available in this repository. 
 
 All the experimental results are available in the following manuscript: [link](https://arxiv.org/pdf/2504.08970)
 
@@ -56,10 +56,6 @@ Please feel free to check out other papers of ours related to this topic:
 - [Comprehensive analysis of freebase and dataset creation for robust evaluation of knowledge graph link prediction models](https://drive.google.com/file/d/1evfTheEJ4jVsjvXB-BRj9FE13UmtiQap/view)
 - [Realistic re-evaluation of knowledge graph completion methods: An experimental study](https://dl.acm.org/doi/pdf/10.1145/3318464.3380599)
 
-
-## License
-
-The dataset and code are made available under the [CC0 1.0 Universal](https://github.com/idirlab/largeKGEeval/blob/main/LICENSE).
 
 ## Cite
 If you find our work useful for your research or you use our datasets in a scientific publication, we kindly request that you cite the following paper:
@@ -71,3 +67,7 @@ If you find our work useful for your research or you use our datasets in a scien
   year={2025}
 }
 ```
+
+## License
+
+The datasets and code are available under the [CC0 1.0 Universal](https://github.com/idirlab/largeKGEeval/blob/main/LICENSE).

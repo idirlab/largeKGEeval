@@ -12,6 +12,5 @@ Global metrics focus on how to aggregate or report the results. We need to outpu
 We conducted link prediction experiments using the four aforementioned KGE models in the DGL-KE framework on datasets FB-CVT-REV, FB+CVT-REV, and FB15k-237. We used the hyperparameters suggested in DGL-KE with some tweaks. The scripts and logs of our training are available in the folder logs.
 
 ### Other Evaluation Protocols
-For Entity-Pair Ranking, Property Prediction, and Triple Classification, we have explained in detail how to perform the experiments in our [manuscript](https://arxiv.org/abs/2504.08970). (Please see the modified general_models.py file in the DGL-KE framework.) 
+For Entity-Pair Ranking, Property Prediction, and Triple Classification, we have explained in detail how to perform the experiments in our manuscript. (Please see the modified general_models.py file in the DGL-KE framework.) 
 
-Should you have any questions, please contact [us](mailto:nasim.shirvanimahdavi2@mavs.uta.edu).
